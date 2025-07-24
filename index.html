@@ -1,0 +1,56 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Based Calculator</title>
+<link rel="stylesheet" href="calc.css">
+</head>
+<body>
+<h1>Calculator with HTML, CSS, and JavaScript</h1>
+<script src="calc.js"></script>
+<div id="calcBody" class="container">
+    <input id="id1" type="text">
+    <div id="outputField" class="ioField">
+        <p id="output"></p>
+    </div>
+    <div id="inputArea" class="ioField">
+
+        <div id="on" class="input" onclick="onFunction()">
+            <button id="onbtn" class="inpbtn special">ON</button>
+        </div>
+        <div id="off" class="input" onclick="printName()">
+            <button id="offbtn" class="inpbtn special">OFF</button>
+        </div>
+        <div id="del" class="input" onclick="delBack()">
+            <button id="delbtn" class="inpbtn special">DEL</button>
+        </div>
+        <div id="ac" class="input" onclick="clearAll()">
+            <button id="acbtn" class="inpbtn special">AC</button>
+        </div>
+        <div class="input"><button id="inp1" class="inpbtn" onclick="myInput1()">1</button></div>
+        <div class="input"><button id="inp2" class="inpbtn" onclick="myInput2()">2</button></div>
+        <div class="input"><button id="inp3" class="inpbtn" onclick="myInput3()">3</button></div>
+        <div class="input"><button id="inp4" class="inpbtn" onclick="myInput4()">4</button></div>
+        <div class="input"><button id="inp5" class="inpbtn" onclick="myInput5()">5</button></div>
+        <div class="input"><button id="inp6" class="inpbtn" onclick="myInput6()">6</button></div>
+        <div class="input"><button id="inp7" class="inpbtn" onclick="myInput7()">7</button></div>
+        <div class="input"><button id="inp8" class="inpbtn" onclick="myInput8()">8</button></div>
+        <div class="input"><button id="inp9" class="inpbtn" onclick="myInput9()">9</button></div>
+        <div class="input"><button id="inp0" class="inpbtn" onclick="myInput0()">0</button></div>
+        <div id="decimal" class="input"><button id="inpdml" class="inpbtn" onclick="myInputDec()">.</button></div>
+        <div id="addition" class="input"><button id="inpplus" class="inpbtn" onclick="myInputAdd()">+</button></div>
+        <div id="substraction" class="input"><button id="inpminus" class="inpbtn" onclick="myInputSub()">-</button></div>
+        <div id="multiplication" class="input"><button id="inpmult" class="inpbtn" onclick="myInputMult()">x</button></div>
+        <div id="division" class="input"><button id="inpdiv" class="inpbtn" onclick="myInputDiv()">/</button></div>
+        <!-- Additional Math Operations -->
+        <div id="modulo" class="input"><button id="inpmod" class="inpbtn" onclick="myInputMod()">%</button></div>
+        <div id="sqrt" class="input"><button id="inpsqrt" class="inpbtn" onclick="myInputSqrt()">√</button></div>
+        <div id="power" class="input"><button id="inppower" class="inpbtn" onclick="myInputPower()">^</button></div>
+        <div id="negate" class="input"><button id="inpneg" class="inpbtn" onclick="myInputNeg()">±</button></div>
+        <div id="equal" class="input" onclick="calAnswer()">
+            <button id="inpeql" class="inpbtn equals">=</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
